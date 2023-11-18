@@ -1,8 +1,8 @@
 SELECT
-cc.name AS 'Category',
-c.fullname AS 'Course',
-gi.itemname AS 'Item Name',
-ROUND(gg.finalgrade,2) AS Grade,
+cc.name AS "Category",
+c.fullname AS "Course",
+gi.itemname AS "Item Name",
+ROUND(gg.finalgrade,2) AS "Grade",
 DATE_FORMAT(FROM_UNIXTIME(gg.timemodified),'%Y-%m-%d') AS Time
 
 FROM prefix_course AS c

@@ -2,8 +2,8 @@ SELECT DISTINCT
 CONCAT(u.firstname, " ", u.lastname) AS "Name",
 c.fullname AS "Course",
 a.name AS "Assignment",
-DATE_FORMAT(FROM_UNIXTIME(a.gradingduedate),'%Y-%m-%d %H:%i') AS "Due Date",
-DATEDIFF(NOW(), FROM_UNIXTIME(a.gradingduedate)) AS days_late
+DATE_FORMAT(FROM_UNIXTIME(a.gradingduedate), '%Y-%m-%d %H:%i') AS "Due Date",
+DATEDIFF(NOW(), FROM_UNIXTIME(a.gradingduedate)) AS "Days Late"
 
 FROM prefix_user_enrolments ue
 JOIN prefix_enrol AS e ON e.id = ue.enrolid

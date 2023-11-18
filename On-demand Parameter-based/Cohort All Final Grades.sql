@@ -1,9 +1,9 @@
 SELECT
-ch.name AS 'Class',
-cc.name AS 'Category',
-c.fullname AS 'Course',
-CONCAT(u.firstname, ' ', u.lastname) AS 'Student Name',
-ROUND(gg.finalgrade,2) AS Grade
+ch.name AS "Class",
+cc.name AS "Category",
+c.fullname AS "Course",
+CONCAT(u.firstname, ' ', u.lastname) AS "Student Name",
+ROUND(gg.finalgrade,2) AS "Grade"
 
 FROM prefix_course AS c
 JOIN prefix_context AS ctx ON c.id = ctx.instanceid

@@ -1,7 +1,7 @@
 SELECT
-cc.name AS 'Category',
-c.fullname AS 'Course',
-ROUND(gg.finalgrade,2) AS Grade
+cc.name AS "Category",
+c.fullname AS "Course",
+ROUND(gg.finalgrade,2) AS "Grade",
 
 FROM prefix_course AS c
 JOIN prefix_context AS ctx ON c.id = ctx.instanceid

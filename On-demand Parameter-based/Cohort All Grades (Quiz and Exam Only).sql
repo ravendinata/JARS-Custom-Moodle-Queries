@@ -1,10 +1,10 @@
 SELECT
-ch.name AS 'Class',
-c.fullname AS 'Course',
-gi.itemname AS 'Item Name',
-CONCAT(u.firstname, ' ', u.lastname) AS 'Student Name',
-ROUND(gg.finalgrade,2) AS Grade,
-DATE_FORMAT(FROM_UNIXTIME(gg.timemodified),'%Y-%m-%d') AS Time
+ch.name AS "Class",
+c.fullname AS "Course",
+gi.itemname AS "Item Name",
+CONCAT(u.firstname, ' ', u.lastname) AS "Student Name",
+ROUND(gg.finalgrade,2) AS "Grade",
+DATE_FORMAT(FROM_UNIXTIME(gg.timemodified), '%Y-%m-%d') AS Time
 
 FROM prefix_course AS c
 JOIN prefix_context AS ctx ON c.id = ctx.instanceid
