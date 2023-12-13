@@ -1,3 +1,10 @@
+/* QUERY NAME: [Grade] Cohort All Final Grades */
+
+/* DESCRIPTION FOR MOODLE - Copy and paste the HTML code below
+<p>Set the <code>cohort_1</code>, <code>cohort_2</code>, and <code>cohort_3</code> parameters with the cohort ID numbers of the classes you want to look into. </p>
+<p><em>Unfortunately this method only supports a predefined number of parameters to be added (no dynamic parameters). Hence, three was provided.</em></p>
+*/
+
 SELECT
 ch.name AS "Class",
 cc.name AS "Category",

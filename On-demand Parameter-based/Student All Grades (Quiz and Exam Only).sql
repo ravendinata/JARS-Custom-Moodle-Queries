@@ -1,3 +1,9 @@
+/* QUERY NAME: [Grade] Student All Grades (Quiz and Exam Only) */
+
+/* DESCRIPTION FOR MOODLE - Copy and paste the HTML code below
+<p>Set the <code>first_name</code> and <code>last_name</code> parameters with the student's first and last name.</p>
+*/
+
 SELECT
 cc.name AS "Category",
 c.fullname AS "Course",

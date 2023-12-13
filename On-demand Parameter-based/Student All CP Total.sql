@@ -1,3 +1,10 @@
+/* QUERY NAME: [Grade] All Final Grades */
+
+/* DESCRIPTION FOR MOODLE - Copy and paste the HTML code below
+<p>Set the <code>firstname</code> and <code>lastname</code> parameters with the student's first and last name.</p>
+*/
+
+
 SELECT
 cc.name AS "Category",
 c.fullname AS "Course",

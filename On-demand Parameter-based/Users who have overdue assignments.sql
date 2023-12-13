@@ -1,3 +1,13 @@
+/* QUERY NAME: [Overdue] Users who have overdue assignments */
+
+/* DESCRIPTION FOR MOODLE - Copy and paste the HTML code below
+<p>In the filter role field, enter the following for filtering options:</p>
+<ul>
+<li><code>student</code> for students</li>
+<li><code>teacher-syswide</code> for teachers</li>
+</ul>
+*/
+
 SELECT DISTINCT
 CONCAT(u.firstname, " ", u.lastname) AS "Name",
 c.fullname AS "Course",
