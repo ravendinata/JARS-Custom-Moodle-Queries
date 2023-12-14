@@ -31,7 +31,7 @@ JOIN (
 	GROUP BY setnumber) stm
 ON (stm.setnumber = ats.statusset)
 
-WHERE ats.sessdate >= :session_start
+WHERE ats.sessdate >= unix_timestamp(:session_start)
 AND ats.lasttaken != 0
 
 GROUP BY atl.studentid
