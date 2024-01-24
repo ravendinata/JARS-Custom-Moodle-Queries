@@ -56,6 +56,14 @@ WHERE (
         AND gi.itemname != ''
         AND sc.student_count > gc.grade_count
     )
+    OR gi.id IN (
+		SELECT gi.id
+        
+        FROM prefix_grade_items AS gi
+        JOIN prefix_grade_grades AS gg on gg.itemid = gi.id
+        
+        WHERE gg.finalgrade IS NULL
+    )
 )
 AND c.id != 1 -- Exclude the front page
 AND cc.name != 'Teachers Only' -- Exclude the Teachers Only category
